@@ -17,6 +17,8 @@
 body{
     background-color: var(--primarioA3);
     font-family: 'Roboto', 'sans-serif';
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -31,7 +33,7 @@ footer{
     font-size: 11px;
 }
 
-.contenedor{
+.contenedorFooter{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -46,6 +48,12 @@ footer{
     flex-direction: column;
 }
 
+.items{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
 .redes{
     display: flex;
     flex-direction: row;
@@ -57,7 +65,7 @@ footer{
     height: 50px;
 }
 
-.imagen{
+.seccion-redes{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,5 +73,9 @@ footer{
 }
 
 .red{
-    width: 20px;
+    margin: 3px;
+}
+
+.pago{
+    color: black;
 }
