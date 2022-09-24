@@ -187,7 +187,7 @@ footer{
         height: 140px;
     }
     .seccion-redes{
-        margin: auto;
+        margin-left: 20%;
         padding: 15px;
     }
     .redes i{
@@ -195,7 +195,8 @@ footer{
         margin: 18px;
     }
     .items-footer{
-        margin: auto;
+        font-size: 20px;
+        margin-left: 10%;
     }
     .item{
         padding: 40px;
