@@ -72,10 +72,38 @@ footer{
     align-items: center;
 }
 
-.red{
+.redes i{
     margin: 3px;
 }
 
 .pago{
     color: black;
+}
+
+/* Footer  Desktop*/
+@media only screen and (min-width:1024px){
+    .contenedorFooter{
+        justify-content: flex-start;
+    }
+    footer{
+        font-size: medium;
+    }
+    .logoFooter{
+        width: 140px;
+        height: 140px;
+    }
+    .seccion-redes{
+        margin: auto;
+        padding: 15px;
+    }
+    .redes i{
+        font-size: 28px;
+        margin: 18px;
+    }
+    .items{
+        margin: auto;
+    }
+    .item{
+        padding: 40px;
+    }
 }
