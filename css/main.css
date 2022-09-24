@@ -1,0 +1,19 @@
+:root {
+    --primario: #333F77;
+    --secundario: #483177;
+    --acento: #285C6D;
+    --primarioA1: #334077e5;
+    --secundarioA1: #334077e5;
+    --acentoA1: #333F77e5;
+    --primarioA2: #334077c0;
+    --secundarioA2: #334077c0;
+    --acentoA2: #333F77c0;
+    --primarioA3: #334077bd;
+    --secundarioA3: #334077bd;
+    --acentoA3: #333F77bd;
+}
+
+body{
+    background-color: var(--primarioA3);
+}
+
