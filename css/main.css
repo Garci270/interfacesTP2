@@ -21,7 +21,47 @@ body{
     padding: 0;
 }
 
-
+/* NavBar */
+.contenedor-nav{
+    display: flex;
+    max-height: auto;
+    width: 100%;
+    background-color: var(--primarioA2);
+}
+.items{
+    display: none;
+    grid-area: items;
+}
+.logo{
+    display: flex;
+    margin: 5px;
+    grid-area: logo;
+}
+.img-logo{
+    margin-left: 5px;
+    width: 35px;
+    height: 100%;
+    border-radius: 10px;
+}
+.container-search{
+    margin-top: 8px;
+}
+.search{
+    width: 70%;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    padding-left: 50px;
+    margin-left: 10%;
+}
+.icons{
+    grid-area: icons;
+}
+.icons i{
+    font-size: 25px;
+    margin: 10px;
+}
 
 /* Footer */
 footer{
@@ -80,8 +120,61 @@ footer{
     color: black;
 }
 
-/* Footer  Desktop*/
 @media only screen and (min-width:1024px){
+    /* NavBar Desktop*/
+    .contenedor-nav{
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr 0.5fr;
+        grid-template-areas: "logo items icons";
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .img-logo{
+        cursor: pointer;
+        width: 80px;
+    }
+    .container-search{
+        margin-top: 4%;
+    }
+    .search{
+        width: 100%;
+        height: 43px;
+        border: 2px solid black;
+    }
+    .search::placeholder{
+        color: rgb(16, 16, 16);
+        font-size: 18px;
+    }
+    .items{
+        display: flex;
+        padding: 24px;
+        margin-left: 30px;
+    }
+    .items button{
+        cursor: pointer;
+        margin-left: 15px;
+        width: 40%;
+        font-size: 20px;
+        height: 40px;
+        background-color: var(--acento);
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 2px rgba(0,0,0,0.5);
+        color: white;
+    }
+    .items button:hover{
+        box-shadow: 2px 3px rgba(0,0,0,0.5);
+    }
+    .icons{
+        margin-left: 40%;
+    }
+    .icons i{
+        cursor: pointer;
+        font-size: 42px;
+        margin: 23px;
+    }
+    /* Footer  Desktop*/
     .contenedorFooter{
         justify-content: flex-start;
     }
