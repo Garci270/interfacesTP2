@@ -24,11 +24,12 @@ body{
 /* NavBar */
 .contenedor-nav{
     display: flex;
+    position: fixed;
     max-height: auto;
     width: 100%;
     background-color: var(--primarioA2);
 }
-.items{
+.items-nav{
     display: none;
     grid-area: items;
 }
@@ -88,7 +89,7 @@ footer{
     flex-direction: column;
 }
 
-.items{
+.items-footer{
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -146,12 +147,12 @@ footer{
         color: rgb(16, 16, 16);
         font-size: 18px;
     }
-    .items{
+    .items-nav{
         display: flex;
         padding: 24px;
         margin-left: 30px;
     }
-    .items button{
+    .items-nav button{
         cursor: pointer;
         margin-left: 15px;
         width: 40%;
@@ -163,7 +164,7 @@ footer{
         box-shadow: 1px 2px rgba(0,0,0,0.5);
         color: white;
     }
-    .items button:hover{
+    .items-nav button:hover{
         box-shadow: 2px 3px rgba(0,0,0,0.5);
     }
     .icons{
@@ -193,7 +194,7 @@ footer{
         font-size: 28px;
         margin: 18px;
     }
-    .items{
+    .items-footer{
         margin: auto;
     }
     .item{
