@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 :root {
     --primario: #333F77;
     --secundario: #483177;
@@ -15,5 +16,54 @@
 
 body{
     background-color: var(--primarioA3);
+    font-family: 'Roboto', 'sans-serif';
 }
 
+
+
+/* Footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--primario);
+    width: 100%;
+    padding: 1em 0;
+    font-size: 11px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titulos{
+    color: #ffff;
+}
+
+.item{
+    width: 100px;
+    flex-direction: column;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logoFooter{
+    width: 50px;
+    height: 50px;
+}
+
+.imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.red{
+    width: 20px;
+}
