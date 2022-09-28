@@ -177,7 +177,7 @@ footer{
     }
 
     .input-icono {
-        background-image: url('../../search-icon-png-21.png');
+        background-image: url('../assets/img/search-icon-png-21.png');
         background-repeat: no-repeat;
         background-position: 4px center;
         background-size: 20px;
