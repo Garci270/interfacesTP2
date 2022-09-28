@@ -14,6 +14,10 @@
     --acentoA3: #333F77bd;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 body{
     background-color: var(--primarioA3);
     font-family: 'Roboto', 'sans-serif';
@@ -80,7 +84,7 @@ footer{
     justify-content: center;
 }
 
-.titulos{
+.titulos, .item-foot{
     color: #ffff;
 }
 
@@ -134,18 +138,10 @@ footer{
     .img-logo{
         cursor: pointer;
         width: 80px;
+        height: 80px;
     }
     .container-search{
-        margin-top: 4%;
-    }
-    .search{
-        width: 100%;
-        height: 43px;
-        border: 2px solid black;
-    }
-    .search::placeholder{
-        color: rgb(16, 16, 16);
-        font-size: 18px;
+        margin-top: 6%;
     }
     .items-nav{
         display: flex;
@@ -172,8 +168,41 @@ footer{
     }
     .icons i{
         cursor: pointer;
-        font-size: 42px;
+        font-size: 25px;
         margin: 23px;
+    }
+    .input-icono::placeholder{
+        color: rgb(16, 16, 16);
+        font-size: 18px;
+    }
+
+    .input-icono {
+        background-image: url('../../search-icon-png-21.png');
+        background-repeat: no-repeat;
+        background-position: 4px center;
+        background-size: 20px;
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        width: 300px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    
+    .input-icono input {
+        -webkit-tap-highlight-color: transparent;
+        width: 100%;
+        font-size: 0.9em;
+        border: none;
+    }
+    .input-icono input::placeholder{
+        color: black;
+    }
+
+    input:focus { 
+        outline: none !important;
+        border-color: transparent;
     }
     /* Footer  Desktop*/
     .contenedorFooter{
@@ -200,5 +229,8 @@ footer{
     }
     .item{
         padding: 40px;
+    }
+    .item-foot:hover{
+        color: #d1d1d1;
     }
 }
