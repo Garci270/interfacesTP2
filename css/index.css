@@ -167,7 +167,6 @@ header nav a.activo {
     margin: 5px;
 	min-width: 20%;
 	transition: .3s ease all;
-	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
 }
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
@@ -178,6 +177,7 @@ header nav a.activo {
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
     border-radius: 10px;
 	width: 100%;
+    height: 160px;
 	vertical-align: top;
 }
 
