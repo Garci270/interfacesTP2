@@ -38,22 +38,30 @@ body{
 .logo{
     display: flex;
     flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .img-logo{
+    margin: 5px;
     margin-left: 5px;
     width: 35px;
-    height: 100%;
+    height: 35px;
     border-radius: 10px;
 }
 
 .icons{
     display: flex;
     flex-direction: row;
+    margin-left: auto;
     align-items: center;
 }
 .icons i{
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px;
+}
+
+.container-search{
+    margin: auto;
 }
 
 .input-icono::placeholder{
@@ -69,25 +77,33 @@ body{
     display: flex;
     align-items: center;
     padding-right: 10px;
-    width: 30px;
+    width: 150px;
     height: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 5px;
     margin-left: 10%;
 }
 
 .input-icono input {
+    margin: auto;
     padding-left: 50px;
-    margin-left: 10%;
     -webkit-tap-highlight-color: transparent;
     width: 100%;
-    font-size: 0.9em;
+    font-size: 0.7em;
     border: none;
     color: black;
     background-color: transparent;
 }
 .input-icono input::placeholder{
     color: black;
+}
+input:focus { 
+    outline: none !important;
+    border-color: transparent;
+}
+
+.items-nav{
+    display: none;
 }
 
 /* Footer */
@@ -157,19 +173,17 @@ footer{
         cursor: pointer;
         width: 80px;
         height: 80px;
-        margin: 5px;
     }
-    .container-search{
-        margin: auto;
-    }
+    
     .items-nav{
+        display: flex;
         margin: auto;
         padding-left: 25px;
     }
     .items-nav button{
         cursor: pointer;
         margin-left: 15px;
-        width: 40%;
+        width: 120px;
         font-size: 15px;
         height: 35px;
         background-color: var(--acento);
@@ -190,22 +204,14 @@ footer{
         margin: 23px;
     }
     .input-icono::placeholder{
-        color: rgb(16, 16, 16);
         font-size: 18px;
     }
 
     .input-icono {
-        background-image: url('../assets/img/search-icon-png-21.png');
-        background-repeat: no-repeat;
-        background-position: 4px center;
-        background-size: 20px;
-        display: flex;
-        align-items: center;
-        padding-right: 10px;
+        border: 1.8px solid black;
+        background-size: 16px;
         width: 300px;
         height: 30px;
-        border: 2px solid black;
-        border-radius: 5px;
         margin-left: 10%;
     }
     
@@ -219,14 +225,7 @@ footer{
         color: black;
         background-color: transparent;
     }
-    .input-icono input::placeholder{
-        color: black;
-    }
-
-    input:focus { 
-        outline: none !important;
-        border-color: transparent;
-    }
+    
     /* Footer  Desktop*/
     .contenedorFooter{
         justify-content: flex-start;
