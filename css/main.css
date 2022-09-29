@@ -14,10 +14,6 @@
     --acentoA3: #333F77bd;
 }
 
-.pointer{
-    cursor: pointer;
-}
-
 body{
     background-color: var(--primarioA3);
     font-family: 'Roboto', 'sans-serif';
@@ -28,19 +24,20 @@ body{
 /* NavBar */
 .contenedor-nav{
     display: flex;
+    flex-direction: row;
     position: fixed;
+    align-items: center;
     max-height: auto;
     width: 100%;
-    background-color: var(--primarioA2);
+    background-color: var(--primario);
 }
 .items-nav{
-    display: none;
-    grid-area: items;
+    display: flex;
+    flex-direction: row;
 }
 .logo{
     display: flex;
-    margin: 5px;
-    grid-area: logo;
+    flex-direction: row;
 }
 .img-logo{
     margin-left: 5px;
@@ -48,24 +45,49 @@ body{
     height: 100%;
     border-radius: 10px;
 }
-.container-search{
-    margin-top: 8px;
-}
-.search{
-    width: 70%;
-    background-color: transparent;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: black;
-    padding-left: 50px;
-    margin-left: 10%;
-}
+
 .icons{
-    grid-area: icons;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .icons i{
     font-size: 25px;
     margin: 10px;
+}
+
+.input-icono::placeholder{
+    color: rgb(16, 16, 16);
+    font-size: 18px;
+}
+
+.input-icono {
+    background-image: url('../assets/img/search-icon-png-21.png');
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 10px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    width: 30px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 10%;
+}
+
+.input-icono input {
+    padding-left: 50px;
+    margin-left: 10%;
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    font-size: 0.9em;
+    border: none;
+    color: black;
+    background-color: transparent;
+}
+.input-icono input::placeholder{
+    color: black;
 }
 
 /* Footer */
@@ -118,6 +140,7 @@ footer{
 }
 
 .redes i{
+    cursor: pointer;
     margin: 3px;
 }
 
@@ -127,11 +150,6 @@ footer{
 
 @media only screen and (min-width:1024px){
     /* NavBar Desktop*/
-    .contenedor-nav{
-        display: grid;
-        grid-template-columns: 0.5fr 1.5fr 0.5fr;
-        grid-template-areas: "logo items icons";
-    }
     .logo{
         margin-left: 20px;
     }
@@ -139,21 +157,21 @@ footer{
         cursor: pointer;
         width: 80px;
         height: 80px;
+        margin: 5px;
     }
     .container-search{
-        margin-top: 6%;
+        margin: auto;
     }
     .items-nav{
-        display: flex;
-        padding: 24px;
-        margin-left: 30px;
+        margin: auto;
+        padding-left: 25px;
     }
     .items-nav button{
         cursor: pointer;
         margin-left: 15px;
         width: 40%;
-        font-size: 20px;
-        height: 40px;
+        font-size: 15px;
+        height: 35px;
         background-color: var(--acento);
         border: none;
         border-radius: 10px;
@@ -164,7 +182,7 @@ footer{
         box-shadow: 2px 3px rgba(0,0,0,0.5);
     }
     .icons{
-        margin-left: 40%;
+        margin-left: auto;
     }
     .icons i{
         cursor: pointer;
@@ -188,13 +206,18 @@ footer{
         height: 30px;
         border: 2px solid black;
         border-radius: 5px;
+        margin-left: 10%;
     }
     
     .input-icono input {
+        padding-left: 50px;
+        margin-left: 10%;
         -webkit-tap-highlight-color: transparent;
         width: 100%;
         font-size: 0.9em;
         border: none;
+        color: black;
+        background-color: transparent;
     }
     .input-icono input::placeholder{
         color: black;
@@ -229,6 +252,9 @@ footer{
     }
     .item{
         padding: 40px;
+    }
+    .item-foot{
+        cursor: pointer;
     }
     .item-foot:hover{
         color: #d1d1d1;
