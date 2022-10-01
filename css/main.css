@@ -15,17 +15,33 @@
 }
 
 body{
-    background-color: var(--primarioA3);
+    background-color: var(--primarioA1);
     font-family: 'Roboto', 'sans-serif';
     margin: 0;
     padding: 0;
+}
+
+.button-secundario{
+    margin: 5px;
+    cursor: pointer;
+    width: auto;
+    font-size: 15px;
+    height: 25px;
+    background-color: var(--secundario);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px rgba(0,0,0,0.5);
+    color: white;
+}
+
+.button-secundario:hover{
+    box-shadow: 2px 3px rgba(0,0,0,0.5);
 }
 
 /* NavBar */
 .contenedor-nav{
     display: flex;
     flex-direction: row;
-    position: fixed;
     align-items: center;
     max-height: auto;
     width: 100%;
@@ -108,8 +124,7 @@ input:focus {
 
 /* Footer */
 footer{
-    position: absolute;
-    bottom: 0;
+    bottom: 0px;
     background-color: var(--primario);
     width: 100%;
     padding: 1em 0;
