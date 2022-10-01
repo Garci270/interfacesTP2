@@ -1,60 +1,128 @@
-const fila = document.querySelector('.contenedor-carousel');
-const peliculas = document.querySelectorAll('.pelicula');
+//CARROUSEL DE JUEGOS PAGOS
+const pagos = document.querySelectorAll('.pelicula');
+const nextPagos = document.querySelector('.flecha-d-pagos');
+const prevPagos = document.querySelector('.flecha-i-pagos');
+console.log(pagos)
 
-const flechaIzquierda = document.getElementById('flecha-izquierda');
-const flechaDerecha = document.getElementById('flecha-derecha');
+window.addEventListener('load', ()=>{
+	pagos[0].classList.add('active');
+	pagos[1].classList.add('active');
+	pagos[2].classList.add('active');
+	pagos[3].classList.add('active');
+})
 
-// ? ----- ----- Event Listener para la flecha derecha. ----- -----
-flechaDerecha.addEventListener('click', () => {
-	fila.scrollLeft += fila.offsetWidth;
+nextPagos.addEventListener('click', () =>{
+	paginationTwoPagos();
+})
 
-	const indicadorActivo = document.querySelector('.indicadores .activo');
-	if(indicadorActivo.nextSibling){
-		indicadorActivo.nextSibling.classList.add('activo');
-		indicadorActivo.classList.remove('activo');
-	}
-});
-
-// ? ----- ----- Event Listener para la flecha izquierda. ----- -----
-flechaIzquierda.addEventListener('click', () => {
-	fila.scrollLeft -= fila.offsetWidth;
-
-	const indicadorActivo = document.querySelector('.indicadores .activo');
-	if(indicadorActivo.previousSibling){
-		indicadorActivo.previousSibling.classList.add('activo');
-		indicadorActivo.classList.remove('activo');
-	}
-});
-
-// ? ----- ----- Paginacion ----- -----
-const numeroPaginas = Math.ceil(peliculas.length / 5);
-for(let i = 0; i < numeroPaginas; i++){
-	const indicador = document.createElement('button');
-
-	if(i === 0){
-		indicador.classList.add('activo');
-	}
-
-	document.querySelector('.indicadores').appendChild(indicador);
-	indicador.addEventListener('click', (e) => {
-		fila.scrollLeft = i * fila.offsetWidth;
-
-		document.querySelector('.indicadores .activo').classList.remove('activo');
-		e.target.classList.add('activo');
-	});
+prevPagos.addEventListener('click',() =>{
+	paginationOnePagos();
+})
+const paginationOnePagos = () =>{
+	pagos[4].classList.remove('active');
+	pagos[5].classList.remove('active');
+	pagos[6].classList.remove('active');
+	pagos[7].classList.remove('active');
+	pagos[0].classList.add('active');
+	pagos[1].classList.add('active');
+	pagos[2].classList.add('active');
+	pagos[3].classList.add('active');
 }
 
-// ? ----- ----- Hover ----- -----
-peliculas.forEach((pelicula) => {
-	pelicula.addEventListener('mouseenter', (e) => {
-		const elemento = e.currentTarget;
-		setTimeout(() => {
-			peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
-			elemento.classList.add('hover');
-		}, 300);
-	});
-});
+const paginationTwoPagos = () =>{
+	pagos[0].classList.remove('active');
+	pagos[1].classList.remove('active');
+	pagos[2].classList.remove('active');
+	pagos[3].classList.remove('active');
+	pagos[4].classList.add('active');
+	pagos[5].classList.add('active');
+	pagos[6].classList.add('active');
+	pagos[7].classList.add('active');
+}
 
-fila.addEventListener('mouseleave', () => {
-	peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
-});
+//CARROUSEL JUEGOS GRATIS
+
+const gratis = document.querySelectorAll('.gratis');
+const nextGratis = document.querySelector('.flecha-d-gratis');
+const prevGratis = document.querySelector('.flecha-i-gratis');
+console.log(gratis)
+
+window.addEventListener('load', ()=>{
+	gratis[0].classList.add('active');
+	gratis[1].classList.add('active');
+	gratis[2].classList.add('active');
+	gratis[3].classList.add('active');
+})
+
+nextGratis.addEventListener('click', () =>{
+	paginationTwoGratis();
+})
+
+prevGratis.addEventListener('click',() =>{
+	paginationOneGratis();
+})
+const paginationOneGratis = () =>{
+	gratis[4].classList.remove('active');
+	gratis[5].classList.remove('active');
+	gratis[6].classList.remove('active');
+	gratis[7].classList.remove('active');
+	gratis[0].classList.add('active');
+	gratis[1].classList.add('active');
+	gratis[2].classList.add('active');
+	gratis[3].classList.add('active');
+}
+
+const paginationTwoGratis = () =>{
+	gratis[0].classList.remove('active');
+	gratis[1].classList.remove('active');
+	gratis[2].classList.remove('active');
+	gratis[3].classList.remove('active');
+	gratis[4].classList.add('active');
+	gratis[5].classList.add('active');
+	gratis[6].classList.add('active');
+	gratis[7].classList.add('active');
+}
+
+//CARROUSEL JUEGOS DE VARIEDAD
+
+const variedad = document.querySelectorAll('.variedad');
+const nextVariedad = document.querySelector('.flecha-d-variedad');
+const prevVariedad = document.querySelector('.flecha-i-variedad');
+console.log(variedad)
+
+window.addEventListener('load', ()=>{
+	variedad[0].classList.add('active');
+	variedad[1].classList.add('active');
+	variedad[2].classList.add('active');
+	variedad[3].classList.add('active');
+})
+
+nextVariedad.addEventListener('click', () =>{
+	paginationTwoVariedad();
+})
+
+prevVariedad.addEventListener('click',() =>{
+	paginationOneVariedad();
+})
+const paginationOneVariedad = () =>{
+	variedad[4].classList.remove('active');
+	variedad[5].classList.remove('active');
+	variedad[6].classList.remove('active');
+	variedad[7].classList.remove('active');
+	variedad[0].classList.add('active');
+	variedad[1].classList.add('active');
+	variedad[2].classList.add('active');
+	variedad[3].classList.add('active');
+}
+
+const paginationTwoVariedad = () =>{
+	variedad[0].classList.remove('active');
+	variedad[1].classList.remove('active');
+	variedad[2].classList.remove('active');
+	variedad[3].classList.remove('active');
+	variedad[4].classList.add('active');
+	variedad[5].classList.add('active');
+	variedad[6].classList.add('active');
+	variedad[7].classList.add('active');
+}
+
