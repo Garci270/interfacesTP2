@@ -1,3 +1,9 @@
+//Boton menu de hamburgesa
+document.querySelector("#hambur").addEventListener("click", toggleMenu);
+function toggleMenu() {
+    document.querySelector(".menu-hamburgesa").classList.toggle("mostrar-hambur");
+}
+
 //CARROUSEL DE JUEGOS PAGOS
 const pagos = document.querySelectorAll('.pagos');
 const nextPagos = document.querySelector('.flecha-d-pagos');
@@ -243,8 +249,4 @@ const paginationTwoRol = () =>{
 	rol[3].classList.add('active');
 	rol[4].classList.add('active');
 	rol[5].classList.add('active');
-}
-document.querySelector("#hambur").addEventListener("click", toggleMenu);
-function toggleMenu() {
-    document.querySelector(".menu-hamburgesa").classList.toggle("mostrar-hambur");
 }
