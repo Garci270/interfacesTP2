@@ -1,1 +1,154 @@
+.cuatroEnLinea{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.title-juego{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.img-cuatroEnLinea{
+    width: 100%;
+}
+.img-cuatroEnLinea img{
+    width: 250px;
+    border-radius: 20px;
+    opacity: 50%;
+}
+.buttons-juego{
+    display: flex;
+    justify-content: center;
+}
+.buttons-juego *{
+    margin: 10px;
+    width: 50%;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 1px 2px rgba(0,0,0,0.5);
+    color: white;
+}
+.jugar{
+    background-color: var(--primario);
+}
+.comoJugar{
+    background-color: var(--acento);
+}
+.compartir{
+    display: flex;
+    justify-content: center;
+}
 
+.videos-juego{
+    display: flex;
+    justify-content: center;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+.video img{
+    width: 70%;
+    margin: 10px;
+    opacity: 50%;
+    object-fit: cover;
+}
+.play{
+    display: flex;
+    justify-content: center;
+    margin-top: 23%;
+    position: absolute;
+    font-size: 30px;
+}
+.foro{
+    margin: 10px;
+    color: white;
+}
+.zona-comentar{
+    margin-top: 5%;
+}
+.zona-comentar *{
+    margin: 10px;
+    color: white;
+}
+.zona-comentar input{
+    margin-top: -15%;
+    height: 25px;
+    width: 70%;
+}
+
+.comentarios{
+    padding: 15px;
+}
+.comentarios *{
+    margin-top: 10px;
+}
+.container-comentario{
+    display: flex;
+}
+.img-comentario{
+    width: 35%;
+    margin-right: -20%;
+}
+.img-comentario img{
+    width: 35%;
+    border-radius: 150px;
+}
+.info-comentario{
+    color: white;
+}
+.info-comentario *{
+    margin: 5px;
+}
+.name-fecha{
+    display: flex;
+    font-size: 20px;
+}
+.fecha{
+    margin-left: 10px;
+    font-size: 12px;
+    color: gray;
+}
+@media only screen and (min-width:1024px){
+    .img-cuatroEnLinea img{
+        width: 600px;
+        border-radius: 20px;
+        opacity: 50%;
+    }
+    .buttons-juego *{
+        height: 40px;
+    }
+    .foro{
+        padding: 5%;
+        margin-bottom: -10%;
+    }
+    .zona-comentar{
+        padding: 5%;
+        margin-bottom: -5%;
+        font-size: 25px;
+    }
+    .zona-comentar input{
+        margin-top: 10px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    .comentarios{
+        padding: 5%;
+    }
+    .img-comentario{
+        margin-right: -26%;
+    }
+    .img-comentario img{
+        width: 20%;
+        border-radius: 150px;
+    }
+    .info-comentario{
+        margin-top: 20px;
+    }
+    .info-comentario *{
+        margin: 10px;
+    }
+}
