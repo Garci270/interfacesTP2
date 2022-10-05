@@ -1,74 +1,72 @@
-/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
 
-
-.peliculas-recomendadas h4 {
-	color: #fff;
-	font-size: 30px;
-}
-
-
-/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
-.peliculas-recomendadas {
-	padding-left: 10%;
-}
-
-.peliculas-recomendadas .contenedor-principal {
+.title-novedad{
 	display: flex;
-	align-items: center;
-	position: relative;
+	justify-content: center;
 }
-
-.flecha-izquierda, .flecha-derecha {
-	border: none;
-	background: rgba(0,0,0,0.3);
-	font-size: 40px;
-	height: 50%;
-	top: calc(50% - 25%);
-	line-height: 40px;
-	width: 50px;
-	color: #fff;
+.img-lanzamiento{
 	cursor: pointer;
-	z-index: 500;
-	transition: .2s ease all;
+	width: 100%;
+}
+.img-lanzamiento img{
+	width: 90%;
+	border-radius: 15px;
+	margin-left: 3%;
+}
+.info-lanzamiento{
+	width: 90%;
+	color: white;
+	padding: 10px;
+}
+.info-lanzamiento h2{
+	color: red;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.flecha-izquierda:hover, .flecha-derecha:hover {
-	background: rgba(0,0,0, .9);
-}
 
-.flecha-izquierda {
-	left: 0;
-}
 
-.flecha-derecha {
-	right: 0;
-}
 
-/* ---- ----- ----- Carousel ----- ----- ----- */
-
-.carousel {
+.carousel{
+	width: 100%;
 	display: flex;
-	flex-wrap: nowrap;
+	overflow-x: auto;
 }
-
-.pelicula {
-    margin: 5px;
-	width: 320px;
+.title-carrousel{
+	color: white;
+	margin-left: 10px;
+	margin-top: 60px;
+}
+.flecha-izquierda, .flecha-derecha{
 	display: none;
 }
+.game{
+	width: 200px;
+	position: relative;
+	height: 150px;
+	margin-right: 10px;
+	margin-left: 5px;
+}
+.game img{
+	width: 200px;
+	object-fit: cover;
+	height: 150px;
+	border-radius: 10px;
 
-.info-game{
+}
+
+.info-game {
 	color: white;
-	width: 320px;
-	margin-top: 123px;
+	width: 200px;
+	position: absolute;
+	bottom: 0;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	position: absolute;
 	box-shadow: var(--primario) 0px -60px 36px -28px inset;
 }
+
 .info-game *{
 	margin: 2px;
 }
+
 .info-game h3{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	margin-left: 7px;
@@ -79,14 +77,141 @@
 	margin-left: 7px;
 }
 
-.pelicula img {
-    border-radius: 10px;
-	width: 320px;
-    height: 190px;
-	vertical-align: top;
-	object-fit: cover;
+.large{
+	width: 300px;
+	height: 200px;
 }
 
-.active{
-	display: block;
+.large img{
+	width: 300px;
+	height: 200px;
+}
+
+.large .info-game{
+	width: 300px;
+}
+
+
+
+@media only screen and (min-width:1024px){
+	.title-novedad{
+		display: block;
+		margin-left: 18%;
+		margin-bottom: -1%;
+	}
+	.container-lanzamiento{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.container-lanzamiento *{
+		margin: 25px;
+	}
+	.img-lanzamiento{
+		width: 500px;
+	}
+	.img-lanzamiento img{
+		width: 500px;
+	}
+	.info-lanzamiento{
+		width: 35%;
+	}
+	
+	
+	
+	
+	/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+	
+	.title-carrousel{
+		font-size: 30px;
+		margin-bottom: -8%;
+		margin-left: 5%;
+	}
+	
+	/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+	.games-recomendadas {
+		width: 100%;
+		justify-content: center;
+		display: flex;
+	}
+	
+	.games-recomendadas .contenedor-principal {
+		display: flex;
+		align-items: center;
+		position: relative;
+		margin-top: 10%;
+	}
+	
+	.flecha-izquierda, .flecha-derecha {
+		display: block;
+		border: none;
+		background: rgba(0,0,0,0.3);
+		font-size: 40px;
+		height: 50%;
+		top: calc(50% - 25%);
+		line-height: 40px;
+		width: 50px;
+		color: #fff;
+		cursor: pointer;
+		z-index: 500;
+		transition: .2s ease all;
+	}
+	
+	.flecha-izquierda:hover, .flecha-derecha:hover {
+		background: rgba(0,0,0, .9);
+	}
+	
+	.flecha-izquierda {
+		left: 0;
+	}
+	
+	.flecha-derecha {
+		right: 0;
+	}
+	
+	/* ---- ----- ----- Carousel ----- ----- ----- */
+	
+	.game {
+		margin: 5px;
+		width: 320px;
+		height: 190px;
+		display: none;
+	}
+	
+	.info-game{
+		width: 320px;
+		margin-top: 100px;
+	}
+	.info-game p{
+		font-size: 14px;
+	}
+	
+	.game img {
+		width: 320px;
+		height: 190px;
+	}
+	
+	.large{
+		width: 480px;
+		height: 260px;
+	}
+	
+	.large img{
+		width: 480px;
+		height: 260px;
+	}
+	
+	.large .info-game{
+		color: white;
+		width: 480px;
+		bottom: 0;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		position: absolute;
+		box-shadow: var(--primario) 0px -60px 36px -28px inset;
+	}
+	
+	.active{
+		display: block;
+	}
 }

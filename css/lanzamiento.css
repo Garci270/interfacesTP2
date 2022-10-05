@@ -1,0 +1,233 @@
+.contenedor-launch{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservate{
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.view-reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-launch img{
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+
+.title{
+    margin: auto;
+    color: #ffff;
+}
+
+.title-features{
+    color: #ffff;
+}
+
+
+/* Card Launch */
+.card-launch{
+    margin: 10px;
+    background-color:#363a49;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.section-reservation{
+    width: 200px;
+    height: 200px;
+}
+
+.section-history{
+    width: 350px;
+    height: 350px;
+}
+
+.history-text{
+    color: #ffff;
+    margin: 15px;
+    font-size: 14px;
+}
+
+.card-header, .card-body, .card-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer{
+    position: absolute;
+    bottom: 0; 
+    width: 100%; 
+    margin-bottom: 5px;
+}
+
+.title-card-reservation{
+    margin: 10px;
+    color: #FD0B0B;
+}
+
+.title-card-history{
+    margin: 15px;
+    color: #ffffff;
+}
+
+.data-card-reservation{
+    margin: 10px;
+    color: #ffffff;
+}
+
+/* Slider */
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+}
+
+ul.slider .section-features{
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: -20px;
+    left: -134px;
+}
+
+ul.slider .section-features:first-child{
+    opacity: 1;
+}
+
+ul.slider .section-features:target{
+    opacity: 1;
+}
+
+nav{
+    position: relative;
+    top: 250px;
+}
+
+.menu li{
+    display: inline;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 5px;
+    color: #ffffff;
+}
+
+footer{
+    position: absolute;
+    bottom: -600px;
+}
+.img-back-features-1, .img-back-features-2{
+    display: none;
+}
+
+@media only screen and (min-width:1024px){
+    .card-launch{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .view-reservation{
+        flex-direction: row;
+    }
+    .contenedor-launch img{
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.151) 0px 3px 8px;
+    }
+    .section-reservation{
+        margin: 25px;
+        width: 500px;
+        height: 500px;
+    }
+    
+    .section-history{
+        width: 450px;
+        height: 450px;
+    }
+
+    .history-text{
+        color: #ffff;
+        margin: 15px;
+        font-size: 17px;
+    }
+
+    ul.slider{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    ul.slider .section-features{
+        opacity: 1;
+        position: relative;
+        width: 500px;
+        height: 250px;
+        top: 0px;
+        left: 0px;
+        margin: 30px;
+    }
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    .title-features, .title-card-reservation{
+        font-size: 35px;
+    }
+    .data-card-reservation{
+        font-size: 25px;
+    }
+    .features-view{
+        display: flex;
+        flex-direction: row;
+    }
+    .title{
+        font-size: 35px;
+    }
+    .img-back-features-1{
+        display: block;
+        position: absolute;
+        left: 70px;
+        opacity: 0.4;
+        width: 250px;
+    }
+    .img-back-features-2{
+        display: block;
+        position: absolute;
+        right: 70px;
+        opacity: 0.8;
+        width: 250px;
+    }
+}
+
+
+

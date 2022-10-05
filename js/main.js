@@ -1,5 +1,5 @@
 //CARROUSEL DE JUEGOS PAGOS
-const pagos = document.querySelectorAll('.pelicula');
+const pagos = document.querySelectorAll('.pagos');
 const nextPagos = document.querySelector('.flecha-d-pagos');
 const prevPagos = document.querySelector('.flecha-i-pagos');
 console.log(pagos)
@@ -126,3 +126,125 @@ const paginationTwoVariedad = () =>{
 	variedad[7].classList.add('active');
 }
 
+//CARROUSEL JUEGOS DE MULTIJUGADOR
+
+const multijugador = document.querySelectorAll('.multijugador');
+const nextMultijugador = document.querySelector('.flecha-d-multijugador');
+const prevMultijugador = document.querySelector('.flecha-i-multijugador');
+console.log(multijugador)
+
+window.addEventListener('load', ()=>{
+	multijugador[0].classList.add('active');
+	multijugador[1].classList.add('active');
+	multijugador[2].classList.add('active');
+	multijugador[3].classList.add('active');
+})
+
+nextMultijugador.addEventListener('click', () =>{
+	paginationTwoMultijugador();
+})
+
+prevMultijugador.addEventListener('click',() =>{
+	paginationOneMultijugador();
+})
+const paginationOneMultijugador = () =>{
+	multijugador[4].classList.remove('active');
+	multijugador[5].classList.remove('active');
+	multijugador[6].classList.remove('active');
+	multijugador[7].classList.remove('active');
+	multijugador[0].classList.add('active');
+	multijugador[1].classList.add('active');
+	multijugador[2].classList.add('active');
+	multijugador[3].classList.add('active');
+}
+
+const paginationTwoMultijugador = () =>{
+	multijugador[0].classList.remove('active');
+	multijugador[1].classList.remove('active');
+	multijugador[2].classList.remove('active');
+	multijugador[3].classList.remove('active');
+	multijugador[4].classList.add('active');
+	multijugador[5].classList.add('active');
+	multijugador[6].classList.add('active');
+	multijugador[7].classList.add('active');
+}
+
+//CARROUSEL JUEGOS DE MULTIJUGADOR
+
+const personalizado = document.querySelectorAll('.personalizado');
+const nextPersonalizado = document.querySelector('.flecha-d-personalizado');
+const prevPersonalizado = document.querySelector('.flecha-i-personalizado');
+console.log(personalizado)
+
+window.addEventListener('load', ()=>{
+	personalizado[0].classList.add('active');
+	personalizado[1].classList.add('active');
+	personalizado[2].classList.add('active');
+})
+
+nextPersonalizado.addEventListener('click', () =>{
+	paginationTwoPersonalizado();
+})
+
+prevPersonalizado.addEventListener('click',() =>{
+	paginationOnePersonalizado();
+})
+const paginationOnePersonalizado = () =>{
+	personalizado[4].classList.remove('active');
+	personalizado[5].classList.remove('active');
+	personalizado[3].classList.remove('active');
+	personalizado[0].classList.add('active');
+	personalizado[1].classList.add('active');
+	personalizado[2].classList.add('active');
+}
+
+const paginationTwoPersonalizado = () =>{
+	personalizado[0].classList.remove('active');
+	personalizado[1].classList.remove('active');
+	personalizado[2].classList.remove('active');
+	personalizado[3].classList.add('active');
+	personalizado[4].classList.add('active');
+	personalizado[5].classList.add('active');
+}
+
+//CARROUSEL JUEGOS DE ROL
+
+const rol = document.querySelectorAll('.rol');
+const nextRol = document.querySelector('.flecha-d-rol');
+const prevRol = document.querySelector('.flecha-i-rol');
+console.log(rol)
+
+window.addEventListener('load', ()=>{
+	rol[0].classList.add('active');
+	rol[1].classList.add('active');
+	rol[2].classList.add('active');
+})
+
+nextRol.addEventListener('click', () =>{
+	paginationTwoRol();
+})
+
+prevRol.addEventListener('click',() =>{
+	paginationOneRol();
+})
+const paginationOneRol = () =>{
+	rol[4].classList.remove('active');
+	rol[5].classList.remove('active');
+	rol[3].classList.remove('active');
+	rol[0].classList.add('active');
+	rol[1].classList.add('active');
+	rol[2].classList.add('active');
+}
+
+const paginationTwoRol = () =>{
+	rol[0].classList.remove('active');
+	rol[1].classList.remove('active');
+	rol[2].classList.remove('active');
+	rol[3].classList.add('active');
+	rol[4].classList.add('active');
+	rol[5].classList.add('active');
+}
+document.querySelector("#hambur").addEventListener("click", toggleMenu);
+function toggleMenu() {
+    document.querySelector(".menu-hamburgesa").classList.toggle("mostrar-hambur");
+}
