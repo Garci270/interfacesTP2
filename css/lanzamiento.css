@@ -16,8 +16,8 @@
 /* carrousel */
 
 .container-card-character {
+    display: none;
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 120px;
@@ -399,6 +399,9 @@ footer{
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
+    .container-card-character {
+        display: flex;
+      }
 }
 
 
