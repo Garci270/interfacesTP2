@@ -1,7 +1,15 @@
 //Boton menu de hamburgesa
 document.querySelector("#hambur").addEventListener("click", toggleMenu);
 function toggleMenu() {
+	document.querySelector(".container-carrito-games").classList.remove("active-cart");
     document.querySelector(".menu-hamburgesa").classList.toggle("mostrar-hambur");
+}
+
+//Boton carrito
+document.querySelector("#cart").addEventListener("click", toggleMenuCart);
+function toggleMenuCart() {
+	document.querySelector(".menu-hamburgesa").classList.remove("mostrar-hambur");
+    document.querySelector(".container-carrito-games").classList.toggle("active-cart");
 }
 
 //CARROUSEL DE JUEGOS PAGOS
