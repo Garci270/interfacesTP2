@@ -250,3 +250,33 @@ const paginationTwoRol = () =>{
 	rol[4].classList.add('active');
 	rol[5].classList.add('active');
 }
+
+
+//LOADING
+
+var progress = 0;
+var timer;
+var progressBar = document.querySelector('.progress-bar');
+var components = document.querySelectorAll('.spinner-on');
+var container = document.querySelector('.container-spinner');
+
+
+timer = window.setInterval(function() {
+	if(progress < 100){
+		progress += 20;
+		setTimeout(() => changeProgress(progress), 1000);
+		progressBar.innerHTML = '%' + progress;
+	}else if(progress == 100){
+		components.forEach(e =>{
+			e.classList.remove('spinner-on');
+			container.classList.add('spinner-on');
+		})
+	}
+}, 1000);
+
+const progressbar = document.querySelector(".progress");
+
+const changeProgress = (progress) => {
+  progressbar.style.width = `${progress}%`;
+};
+ 
