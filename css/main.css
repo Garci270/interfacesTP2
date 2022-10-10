@@ -133,7 +133,7 @@ input:focus {
 }
 .container-hambur{
     background-color: var(--primario);
-    width: 30%;
+    width: 100%;
 }
 .img-user{
     display: flex;
@@ -157,13 +157,13 @@ input:focus {
     justify-content: center;
 }
 .container-redes ul{
-    margin-left: -25%;
+    margin-left: -10%;
     display: flex;
     list-style: none;
     font-size: 20px;
 }
 .container-redes ul *{
-    margin: 2px;
+    margin: 5px;
 }
 .container-items{
     display: flex;
@@ -369,6 +369,9 @@ footer{
     .img-user img{
         width: 100px;
         height: 100px;
+    }
+    .container-redes{
+        margin-left: -4px;
     }
     .container-redes ul{
         font-size: 30px;

@@ -1,3 +1,34 @@
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.content-modal{
+    color: white;
+    width: 100%;
+    height: 150px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+.active-modal{
+    display: flex;
+}
+.close-modal{
+    display: flex;
+    justify-content: right;
+}
+.close-modal i{
+    cursor: pointer;
+}
 .cuatroEnLinea{
     width: 100%;
     display: flex;
@@ -37,6 +68,9 @@
 .compartir{
     display: flex;
     justify-content: center;
+}
+.compartir h4{
+    cursor: pointer;
 }
 
 .videos-juego{

@@ -12,6 +12,20 @@ function toggleMenuCart() {
     document.querySelector(".container-carrito-games").classList.toggle("active-cart");
 }
 
+//Boton modal lanzamiento
+if(document.querySelector("#compartir-juego")){
+	document.querySelector("#compartir-juego").addEventListener("click", toggleCompartirModal);
+	function toggleCompartirModal() {
+		document.querySelector(".container-modal").classList.toggle("active-modal");
+	}
+	//Boton modal lanzamiento
+	document.querySelector("#cruz-modal").addEventListener("click", toggleCerrarModal);
+	function toggleCerrarModal() {
+		document.querySelector(".container-modal").classList.remove("active-modal");
+	}
+}
+
+
 //CARROUSEL DE JUEGOS PAGOS
 const pagos = document.querySelectorAll('.pagos');
 const nextPagos = document.querySelector('.flecha-d-pagos');
