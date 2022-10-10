@@ -20,7 +20,6 @@ html {
   }
   body{
     padding-top: 100px;
-
   }
   body::-webkit-scrollbar {
     width: 11px;
@@ -62,10 +61,28 @@ body{
     box-shadow: 2px 3px rgba(0,0,0,0.5);
 }
 
+.bread{
+    display: flex;
+    position: relative;
+}
+
+.bread h4{
+    margin-left: auto;
+    margin-right: 60px;
+    color: rgb(184, 184, 184);
+}
+
+.bread a{
+    text-decoration: none;
+    color:rgb(184, 184, 184) ;
+}
+
 /* NavBar */
 .contenedor-nav{
+    z-index: 999;
     top: 0;
     display: flex;
+    position: sticky;
     flex-direction: row;
     align-items: center;
     max-height: auto;
@@ -210,6 +227,8 @@ input:focus {
     display: none;
 }
 .carrito-games{
+    position: sticky;
+    top: 50px;
     overflow-x: hidden;
 }
 .carrito-games::-webkit-scrollbar {
@@ -346,6 +365,10 @@ footer{
 
 
 @media only screen and (min-width:1024px){
+    .bread h4{
+        margin-right: 100px;
+    }
+    
     /* NavBar Desktop*/
     .logo{
         margin-left: 20px;
@@ -457,6 +480,8 @@ footer{
         z-index: 100;
     }
     .carrito-games{
+        position: absolute;
+        top: -61px;
         width: 410px;
     }
     .container-cart{
