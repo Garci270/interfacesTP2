@@ -206,7 +206,9 @@ input:focus {
     display: flex;
 }
 /*Carrito*/
-
+.container-carrito-games{
+    display: none;
+}
 .carrito-games{
     overflow-x: hidden;
 }
