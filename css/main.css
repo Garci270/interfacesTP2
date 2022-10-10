@@ -14,6 +14,30 @@
     --acentoA3: #333F77bd;
 }
 
+html {
+    --scrollbarBG: var(--primario);
+    --thumbBG: var(--acento);
+  }
+  body{
+    padding-top: 100px;
+
+  }
+  body::-webkit-scrollbar {
+    width: 11px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+
 body{
     background-color: var(--primarioA1);
     font-family: 'Roboto', 'sans-serif';
@@ -182,7 +206,26 @@ input:focus {
     display: flex;
 }
 /*Carrito*/
-.container-carrito-games{
+
+.carrito-games{
+    overflow-x: hidden;
+}
+.carrito-games::-webkit-scrollbar {
+    width: 11px;
+  }
+  .carrito-games {
+    scrollbar-width: thin;
+    scrollbar-color: var(--acento) var(--primario);
+  }
+  .carrito-games::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  .carrito-games::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+.carrito-games{
     width: 100%;
     display: none;
     justify-content: right;
@@ -195,9 +238,17 @@ input:focus {
     overflow-y: scroll;
     background-color: var(--primario);
     display: block;
+    border: 1px solid var(--secundario);
 }
 .carrito-games h3{
     margin-left: 5%;
+    color: white;
+}
+.info-cart{
+    width: 134px;
+}
+.info-cart h4, p, h6{
+    color: white;
 }
 .container-cart{
     width: 100%;
@@ -290,6 +341,7 @@ footer{
 .pago{
     color: black;
 }
+
 
 @media only screen and (min-width:1024px){
     /* NavBar Desktop*/
@@ -394,6 +446,7 @@ footer{
     }
 
     /*Carrito*/
+
     .container-carrito-games{
         width: 100%;
         display: none;
@@ -402,7 +455,7 @@ footer{
         z-index: 100;
     }
     .carrito-games{
-        width: 23%;
+        width: 410px;
     }
     .container-cart{
         width: 100%;
