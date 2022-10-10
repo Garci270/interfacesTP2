@@ -129,10 +129,11 @@ input:focus {
     display: none;
     justify-content: right;
     position: absolute;
+    z-index: 100;
 }
 .container-hambur{
     background-color: var(--primario);
-    width: 30%;
+    width: 100%;
 }
 .img-user{
     display: flex;
@@ -156,13 +157,13 @@ input:focus {
     justify-content: center;
 }
 .container-redes ul{
-    margin-left: -25%;
+    margin-left: -10%;
     display: flex;
     list-style: none;
     font-size: 20px;
 }
 .container-redes ul *{
-    margin: 2px;
+    margin: 5px;
 }
 .container-items{
     display: flex;
@@ -180,7 +181,58 @@ input:focus {
 .mostrar-hambur{
     display: flex;
 }
+/*Carrito*/
+.container-carrito-games{
+    width: 100%;
+    display: none;
+    justify-content: right;
+    position: absolute;
+    z-index: 100;
+}
+.carrito-games{
+    width: 100%;
+    height: 290px;
+    overflow-y: scroll;
+    background-color: var(--primario);
+    display: block;
+}
+.carrito-games h3{
+    margin-left: 5%;
+}
+.container-cart{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.card-carrito{
+    display: flex;
+}
+.img-cart{
+    margin-left: 10px;
+}
+.img-cart img{
+    width: 100px;
+    border-radius: 20px;
+}
+.info-cart{
+    margin-left: 15px;
+}
+.info-cart *{
+    margin: 5px;
+}
+.cantidades{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
 
+}
+.cantidades *{
+    margin: 3px;
+}
+.active-cart{
+    display: flex;
+}
 /* Footer */
 footer{
     margin-top: 10%;
@@ -318,6 +370,9 @@ footer{
         width: 100px;
         height: 100px;
     }
+    .container-redes{
+        margin-left: -4px;
+    }
     .container-redes ul{
         font-size: 30px;
         height: 80px;
@@ -337,7 +392,51 @@ footer{
         margin-bottom: 20px;
         width: 100%;
     }
-    
+
+    /*Carrito*/
+    .container-carrito-games{
+        width: 100%;
+        display: none;
+        justify-content: right;
+        position: absolute;
+        z-index: 100;
+    }
+    .carrito-games{
+        width: 23%;
+    }
+    .container-cart{
+        width: 100%;
+    }
+    .card-carrito{
+        display: flex;
+    }
+    .img-cart{
+        margin-left: 10px;
+    }
+    .img-cart img{
+        width: 100px;
+        border-radius: 20px;
+    }
+    .info-cart{
+        margin-left: 15px;
+    }
+    .info-cart *{
+        margin: 5px;
+    }
+    .cantidades{
+        cursor: pointer;
+        font-size: 20px;
+        display: flex;
+        margin-left: 60px;
+        align-items: center;
+
+    }
+    .cantidades *{
+        margin: 3px;
+    }
+    .active-cart{
+        display: flex;
+    }
     /* Footer  Desktop*/
     .contenedorFooter{
         justify-content: flex-start;

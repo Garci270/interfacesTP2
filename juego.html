@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/juego.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/juego.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -28,7 +28,7 @@
             <button>#variedad</button>
         </div>
         <div class="icons">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart" id="cart" aria-hidden="true"></i>
             <i class="fa fa-bars" id="hambur" aria-hidden="true"></i>
         </div>
     </div>
@@ -56,6 +56,103 @@
                     <li><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesion</li>
                 </ul>
             </div>
+	<div class="menu-hamburgesa">
+		<div class="container-hambur">
+			<div class="container-hambur-user">
+				<div class="img-user">
+					<img src="assets/img/profile.png" alt="">
+				</div>
+				<div class="name-user">
+					<h4>Doggy</h4>
+				</div>
+			</div>
+			<div class="container-redes">
+				<ul>
+					<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+					<li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+					<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+			<div class="container-items">
+				<ul>
+					<li><i class="fa fa-user" aria-hidden="true"></i> Perfil</li>
+					<li><i class="fa fa-bookmark" aria-hidden="true"></i> Guardados</li>
+					<li><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesion</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <div class="container-carrito-games">
+		<div class="carrito-games">
+			<h3>Carrito de compras</h3>
+			<div class="container-cart">
+				<div class="card-carrito">
+					<div class="img-cart">
+						<img src="assets/img/paraTi/1.jpg" alt="">
+					</div>
+					<div class="info-cart">
+						<h4>Nombre del jueg</h4>
+						<p>Descripcion</p>
+						<h6>$99</h6>
+					</div>
+					<div class="cantidades">
+						<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+						<h6>01</h6>
+						<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="container-cart">
+				<div class="card-carrito">
+					<div class="img-cart">
+						<img src="assets/img/paraTi/2.jpeg" alt="">
+					</div>
+					<div class="info-cart">
+						<h4>Nombre del jueg</h4>
+						<p>Descripcion</p>
+						<h6>$99</h6>
+					</div>
+					<div class="cantidades">
+						<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+						<h6>01</h6>
+						<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="container-cart">
+				<div class="card-carrito">
+					<div class="img-cart">
+						<img src="assets/img/paraTi/3.jpeg" alt="">
+					</div>
+					<div class="info-cart">
+						<h4>Nombre del jueg</h4>
+						<p>Descripcion</p>
+						<h6>$99</h6>
+					</div>
+					<div class="cantidades">
+						<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+						<h6>01</h6>
+						<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+    <div class="container-modal">
+        <div class="content-modal">
+            <div class="close-modal">
+                <i class="fa fa-times" id="cruz-modal" aria-hidden="true"></i>
+            </div>
+            <h2>Compartir</h2>
+            <div class="redes">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+				<i class="fa fa-facebook-square" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
     <div class="cuatroEnLinea">
@@ -71,7 +168,7 @@
                 <button class="comoJugar">¿Como Jugar?</button>
             </div>
             <div class="compartir">
-                <h4><i class="fa fa-share" aria-hidden="true"></i> Compartir</h4>
+                <h4 id="compartir-juego"><i class="fa fa-share" aria-hidden="true"></i> Compartir</h4>
             </div>
         </div>
     </div>

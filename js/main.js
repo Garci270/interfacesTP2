@@ -1,8 +1,30 @@
 //Boton menu de hamburgesa
 document.querySelector("#hambur").addEventListener("click", toggleMenu);
 function toggleMenu() {
+	document.querySelector(".container-carrito-games").classList.remove("active-cart");
     document.querySelector(".menu-hamburgesa").classList.toggle("mostrar-hambur");
 }
+
+//Boton carrito
+document.querySelector("#cart").addEventListener("click", toggleMenuCart);
+function toggleMenuCart() {
+	document.querySelector(".menu-hamburgesa").classList.remove("mostrar-hambur");
+    document.querySelector(".container-carrito-games").classList.toggle("active-cart");
+}
+
+//Boton modal lanzamiento
+if(document.querySelector("#compartir-juego")){
+	document.querySelector("#compartir-juego").addEventListener("click", toggleCompartirModal);
+	function toggleCompartirModal() {
+		document.querySelector(".container-modal").classList.toggle("active-modal");
+	}
+	//Boton modal lanzamiento
+	document.querySelector("#cruz-modal").addEventListener("click", toggleCerrarModal);
+	function toggleCerrarModal() {
+		document.querySelector(".container-modal").classList.remove("active-modal");
+	}
+}
+
 
 //CARROUSEL DE JUEGOS PAGOS
 const pagos = document.querySelectorAll('.pagos');

@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/lanzamiento.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <div class="contenedor-nav">
         <div class="logo">
             <div>
-                <a href="index.html"><img class="img-logo" src="./assets/img/logo.png" alt=""></a>
+				<a href="index.html"><img class="img-logo" src="./assets/img/logo.png" alt=""></a>
             </div>
             <div class="container-search input-icono">
                 <input type="text" placeholder="Search">
@@ -27,10 +27,93 @@
             <button>#variedad</button>
         </div>
         <div class="icons">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart" id="cart" aria-hidden="true"></i>
+            <i class="fa fa-bars" id="hambur" aria-hidden="true"></i>
         </div>
     </div>
+	<div class="menu-hamburgesa">
+		<div class="container-hambur">
+			<div class="container-hambur-user">
+				<div class="img-user">
+					<img src="assets/img/profile.png" alt="">
+				</div>
+				<div class="name-user">
+					<h4>Doggy</h4>
+				</div>
+			</div>
+			<div class="container-redes">
+				<ul>
+					<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+					<li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+					<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+			<div class="container-items">
+				<ul>
+					<li><i class="fa fa-user" aria-hidden="true"></i> Perfil</li>
+					<li><i class="fa fa-bookmark" aria-hidden="true"></i> Guardados</li>
+					<li><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesion</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <div class="container-carrito-games">
+		<div class="carrito-games">
+			<h3>Carrito de compras</h3>
+			<div class="container-cart">
+				<div class="card-carrito">
+					<div class="img-cart">
+						<img src="assets/img/pagos/2.png" alt="">
+					</div>
+					<div class="info-cart">
+						<h4>Nombre del jueg</h4>
+						<p>Descripcion</p>
+						<h6>$99</h6>
+					</div>
+					<div class="cantidades">
+						<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+						<h6>01</h6>
+						<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="container-cart">
+				<div class="card-carrito">
+					<div class="img-cart">
+						<img src="assets/img/pagos/4.png" alt="">
+					</div>
+					<div class="info-cart">
+						<h4>Nombre del jueg</h4>
+						<p>Descripcion</p>
+						<h6>$99</h6>
+					</div>
+					<div class="cantidades">
+						<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+						<h6>01</h6>
+						<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="container-cart">
+				<div class="card-carrito">
+					<div class="img-cart">
+						<img src="assets/img/pagos/5.png" alt="">
+					</div>
+					<div class="info-cart">
+						<h4>Nombre del jueg</h4>
+						<p>Descripcion</p>
+						<h6>$99</h6>
+					</div>
+					<div class="cantidades">
+						<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+						<h6>01</h6>
+						<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
     <div class="contenedor-launch">
         <div class="reservation">
             <div class="title">
@@ -144,6 +227,7 @@
         </div>
     </div>
     <div class="container-card-character">
+        <button role="button" id="flecha-izquierda" class="flecha-izquierda flecha-i-personajes"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
         <div class="card-character">
             <img class="img-card-character" src="https://static.wikia.nocookie.net/godofwar/images/b/b8/Kratos_2018.jpg/revision/latest?cb=20180515151105&path-prefix=es" alt="">
             <div class="titles-characters">
@@ -169,7 +253,7 @@
             </div>
             <div class="description-char">
                 <h5>Especie</h5>
-                <h5 class="tipe">Dios</h5>
+                <h5 class="tipe">Dios2</h5>
             </div>
             <hr>
             <div class="description-char">
@@ -186,7 +270,7 @@
             </div>
             <div class="description-char">
                 <h5>Especie</h5>
-                <h5 class="tipe">Dios</h5>
+                <h5 class="tipe">Dios3</h5>
             </div>
             <hr>
             <div class="description-char">
@@ -203,7 +287,7 @@
             </div>
             <div class="description-char">
                 <h5>Especie</h5>
-                <h5 class="tipe">Dios</h5>
+                <h5 class="tipe">Dios4</h5>
             </div>
             <hr>
             <div class="description-char">
@@ -212,6 +296,41 @@
             </div>
             <hr>
         </div>
+        <div class="card-character">
+            <img class="img-card-character" src="https://static.wikia.nocookie.net/godofwar/images/b/b8/Kratos_2018.jpg/revision/latest?cb=20180515151105&path-prefix=es" alt="">
+            <div class="titles-characters">
+                <h4>Dios de la guerra</h4>
+                <hr>
+            </div>
+            <div class="description-char">
+                <h5>Especie</h5>
+                <h5 class="tipe">Dios5</h5>
+            </div>
+            <hr>
+            <div class="description-char">
+                <h5>Alias</h5>
+                <h5 class="tipe">Caido</h5>
+            </div>
+            <hr>
+        </div>
+        <div class="card-character">
+            <img class="img-card-character" src="https://static.wikia.nocookie.net/godofwar/images/b/b8/Kratos_2018.jpg/revision/latest?cb=20180515151105&path-prefix=es" alt="">
+            <div class="titles-characters">
+                <h4>Dios de la guerra</h4>
+                <hr>
+            </div>
+            <div class="description-char">
+                <h5>Especie</h5>
+                <h5 class="tipe">Dios6</h5>
+            </div>
+            <hr>
+            <div class="description-char">
+                <h5>Alias</h5>
+                <h5 class="tipe">Caido</h5>
+            </div>
+            <hr>
+        </div>
+        <button role="button" id="flecha-derecha flecha-d-personajes" class="flecha-derecha flecha-d-personajes"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
       </div>
 
     <footer>
@@ -246,6 +365,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
     <script src="./js/lanzamiento.js"></script>
     <script src="https://use.fontawesome.com/dca8629fdb.js"></script>
 </body>
