@@ -13,6 +13,11 @@
     --secundarioA3: #334077bd;
     --acentoA3: #333F77bd;
 }
+
+.linkBtn{
+    text-decoration: none;
+    color: white;
+}
 /* carrousel */
 
 .container-card-character {
@@ -415,22 +420,23 @@ footer{
 		display: flex;
 	}
     .flecha-izquierda, .flecha-derecha {
+        margin: 15px;
 		display: block;
 		border: none;
-		background: rgba(0,0,0,0.3);
+		background: transparent;
 		font-size: 40px;
 		height: 50%;
 		top: calc(50% - 25%);
 		line-height: 40px;
 		width: 50px;
-		color: #fff;
+		color: #334077e5;
 		cursor: pointer;
 		z-index: 500;
 		transition: .2s ease all;
 	}
 	
 	.flecha-izquierda:hover, .flecha-derecha:hover {
-		background: rgba(0,0,0, .9);
+		color: #483177;
 	}
 }
 
